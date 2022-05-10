@@ -46,6 +46,7 @@ public class PersistentTransactionDAO extends DatabaseHandler implements Transac
             return transactionList;
         }
         // return the last <code>limit</code> number of transaction logs
+
         return transactionList.subList(transactionsnum - limit, transactionsnum);
     }
 
